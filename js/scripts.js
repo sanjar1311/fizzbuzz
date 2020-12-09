@@ -18,6 +18,6 @@ elForm.addEventListener('click', function(evt) {
     elOutput.textContent = buzz;
   }
   else if (elInput.value % 3 === 0 && elInput.value % 5 === 0) {
-    elOutput.textContent == fizzbuzz;
+    elOutput.textContent = fizzbuzz;
   }
 });
