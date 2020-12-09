@@ -14,5 +14,10 @@ elForm.addEventListener('click', function(evt) {
   if(elInput.value % 3 === 0) {
     elOutput.textContent = fizz;
   }
-
+  else if (elInput.value % 5 === 0) {
+    elOutput.textContent = buzz;
+  }
+  else if (elInput.value % 3 === 0 && elInput.value % 5 === 0) {
+    elOutput.textContent == fizzbuzz;
+  }
 });
