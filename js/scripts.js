@@ -8,16 +8,19 @@ var buzz = 'Buzz';
 var fizzbuzz = 'FizzBuzz';
 
 
-elForm.addEventListener('click', function(evt) {
+elForm.addEventListener('submit', function(evt) {
   evt.preventDefault();
 
-  if(elInput.value % 3 === 0) {
+  if (elInput.value % 3 === 0 && elInput.value % 5 === 0) {
+    elOutput.textContent = fizzbuzz;
+  }
+  else if(elInput.value % 3 === 0) {
     elOutput.textContent = fizz;
   }
   else if (elInput.value % 5 === 0) {
     elOutput.textContent = buzz;
   }
-  else if (elInput.value % 3 === 0 && elInput.value % 5 === 0) {
-    elOutput.textContent = fizzbuzz;
+  else {
+    elOutput.textContent = 'Error';
   }
 });
