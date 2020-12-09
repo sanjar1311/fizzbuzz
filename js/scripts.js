@@ -11,7 +11,10 @@ var fizzbuzz = 'FizzBuzz';
 elForm.addEventListener('submit', function(evt) {
   evt.preventDefault();
 
-  if (elInput.value % 15 === 0) {
+  if (elInput.value == 0) {
+    elOutput.textContent = 'Error';
+  }
+  else if (elInput.value % 15 === 0) {
     elOutput.textContent = fizzbuzz;
   }
   else if(elInput.value % 3 === 0) {
